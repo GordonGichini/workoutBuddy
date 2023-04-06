@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react' 
 
 //components
-import WorkoutDetails from '../components/WorkoutDetails'
+import WorkoutDetails from '../components/WorkoutDetails' 
+import WorkoutForm from '../components/WorkoutForm'
 
 
 const Home = () => { 
@@ -26,7 +27,8 @@ const Home = () => {
             {workouts && workouts.map((workout) => (
                <WorkoutDetails key={workout._id} workout={workout}/>
             ))}
-        </div>            
+        </div>         
+        <WorkoutForm />    
         </div>
     )
 } 
